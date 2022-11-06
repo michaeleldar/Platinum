@@ -123,11 +123,12 @@ const template = [{
             mainWindow.setMenuBarVisibility(true);
         }
     },
+    // DevTools and View Source appear to be broken
     {
         label: "DevTools",
         accelerator: "CmdOrCtrl+I",
         click: function() {
-            mainWindow.webContents.toggleDevTools();
+                mainWindow.webContents.toggleDevTools();
         }
     },
     {
@@ -136,7 +137,8 @@ const template = [{
         click: () => {
             mainWindow.webContents
         }
-    }/*
+    }
+    /*
     {
         label: "Check for Updates",
         accelerator: "CmdOrCtrl+U",

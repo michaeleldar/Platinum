@@ -49,7 +49,7 @@ async function createTab(url) {
 createTab();
 
 function viewTabSource(tabHash) {
-    
+    // What???
 }
 
 /**
@@ -157,8 +157,8 @@ function handleTabShortcuts(e) {
         document.querySelector('.current').reload();
         e.preventDefault();
     }
-    if (isModifier && e.key === "u") {
-        viewTabSource();
+    if (isModifier && e.key === "i") {
+        inspectTab(); //reverted because the function is empty
         e.preventDefault();
     }
 };
